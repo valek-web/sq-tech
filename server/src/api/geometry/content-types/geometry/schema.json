@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "geometries",
+  "info": {
+    "singularName": "geometry",
+    "pluralName": "geometries",
+    "displayName": "Geometry",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {}
+    },
+    "metals": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::metal.metal"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "pluginOptions": {}
+    },
+    "imgScale": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

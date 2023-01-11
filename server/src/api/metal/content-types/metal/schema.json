@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "metals",
+  "info": {
+    "singularName": "metal",
+    "pluralName": "metals",
+    "displayName": "Metal",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "models": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::model.model"
+    },
+    "geometryAndMaterial": {
+      "type": "string"
+    },
+    "imgProduct": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "index": {
+      "type": "string"
+    },
+    "long": {
+      "type": "integer"
+    },
+    "size": {
+      "type": "string"
+    },
+    "price": {
+      "type": "float"
+    },
+    "priceUnit": {
+      "type": "integer"
+    },
+    "weight": {
+      "type": "float"
+    },
+    "geometry": {
+      "type": "enumeration",
+      "enum": [
+        "block",
+        "hexFitting",
+        "sheet",
+        "kub",
+        "squarePipe",
+        "tProfile",
+        "corner",
+        "channel",
+        "fittings",
+        "pipe"
+      ]
+    },
+    "materialType": {
+      "type": "string"
+    },
+    "height": {
+      "type": "integer"
+    },
+    "width": {
+      "type": "integer"
+    },
+    "length": {
+      "type": "integer"
+    },
+    "minLong": {
+      "type": "float"
+    }
+  }
+}

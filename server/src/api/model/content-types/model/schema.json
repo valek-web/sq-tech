@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "models",
+  "info": {
+    "singularName": "model",
+    "pluralName": "models",
+    "displayName": "model",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
+    },
+    "geometry": {
+      "type": "enumeration",
+      "enum": [
+        "block",
+        "hexFitting",
+        "sheet",
+        "kub",
+        "squarePipe",
+        "tProfile",
+        "corner",
+        "channel",
+        "fittings",
+        "pipe"
+      ]
+    }
+  }
+}
